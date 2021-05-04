@@ -10,8 +10,8 @@ const map = (callback) =>(start_position)=> (arr) => {
   // we are going to call map with the next value.
 
   /*recursive case: 
-  through each iteration, the index of element we modify and the array object are going to change,
-  but the callback function will remain the same*/
+  through each iteration, the index of element we modify the array value and the array container 
+  object are going to change, but the callback function will remain the same*/
   if(arr.length-start_position > 0){
     arr[start_position]=callback(arr[start_position]);
 
